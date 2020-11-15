@@ -1,0 +1,36 @@
+                                    ToDo App Using LocalStorage
+->In this Project we're Gonna Learn How to Save the data in LocalStorage using the type of Hook which is useEffect().
+In Previous Days When there is no Concept of useEffect was Introduced we used InBild class 
+band Functions:- componentDidMount() and componentWillUnmount()
+Here we create 2 components TodoForm.js and Todos.js
+
+->By using useEffect you tell React that your Component needs to do something after Render
+useEffect basically tells the App that "Hey before eve you load yourself up you might have to load some data".
+
+->The most advantage of using useEffect is Your Application is Ridiculosly Fast. and It can be use Multiple Times.
+
+->Here we use Some dependencies:- 
+                    1. reactstrap
+                    2. uuid  (to give unique id to every single todo)
+                    3. bootstrap
+                    4. react-icons
+
+Note:- when we save the some Information of data in LocalStorage then on reloading the webpage the information is not gone it
+save for us 
+
+
+In Backend The todo is filled up with @ values 1.The values which you were written 2. the unique id's which is automatically alloted to todos
+
+
+*Info- the value of Input is comming up from state
+
+Q. Why we use preventDefault() ? in this Project
+Ans. It's just becoz of onSubmit Event. When onSubmit event is fire than there is inbuild
+function calls which actually reload the whole page on Contrary the whole details which were
+filled by us is cleared. So to prevent the Default function call we use preventDefault()
+
+Q. What We use For Putting-up/Retrevering anything to/from the storage?
+Ans. We're using LocalStorage.getitem() and LocalStorage.setItem()
+
+Q. What does filter method?
+Ans. It creates the Entire new List
